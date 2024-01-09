@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1 1 98vw;
+  margin: 0 auto;
+  justify-content: space-between;
+  gap: clamp(20px, 0.1rem + 5vw, 150px);
+
+  
+}
+
+.block-weather {
+  display: flex;
+  flex-direction: column;
+  flex: 35%;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 10px;
+ 
+
+}
+
+.block-2-3 {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  flex: 50%;
+  margin-right: 10px;
+}
+
+.block-3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  //flex: 50%;
+  column-gap: clamp(10px, 0.1rem + 15vw, 50px);
+  padding: 5px 10px;
+
+}
+

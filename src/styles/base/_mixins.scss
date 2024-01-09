@@ -1,0 +1,23 @@
+/* ---- mixins -----*/
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin spaceBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin borderShadow {
+    border-radius: 0.25rem;
+    box-shadow: 0.25rem 0.25rem 1.25rem 0 rgba(120, 113, 222, 0.10), -0.25rem -0.25rem 1.25rem 0 rgba(120, 113, 222, 0.10);
+}

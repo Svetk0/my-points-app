@@ -1,0 +1,51 @@
+/*--------- base -------*/
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    /*height: 100%;*/
+    @include typo-body;
+    background-color: rgb(46, 101, 56);
+    min-height: 100vh;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+a, button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.main {
+    @include center;
+    flex-direction: column;
+    color: $color-white;
+  
+}
+.title {
+    @include typo-h;
+    font-size: 3rem;
+}
+.subtitle-h3{
+    @include typo-h;
+    font-size: 1.5rem;
+}
+.subtitle-body{
+    @include typo-subtitle-body;
+    font-size: 1.5rem;
+}
+
+
+/*@media screen and (min-width: 768px) {
+    html {
+        font-size: 2.1vw;
+    }
+}*/
+
+@media screen and (min-width: 1600px) {
+    html {
+        font-size: 0.83vw;
+    }
+}

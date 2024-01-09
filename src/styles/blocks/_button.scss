@@ -1,0 +1,28 @@
+$button-background-color:rgba(133, 127, 127, 0.4);
+.button {
+    width: 180px;
+    height: 47px;
+    margin: 5px;
+    //border-radius: $block-radius;
+    border: 1px solid #fff;
+    background-color: $button-background-color;
+    color: #fff;
+   
+
+}
+.imIce {
+    background-color:rgba(56, 66, 117, 0.4);
+}
+.imHot {
+    background-color:rgba(127, 92, 46, 0.4);
+}
+
+.b-test {
+    display: block;
+    align-self: center;
+    justify-self: center;
+
+}
+.b-1 {
+    background-color:rgba(235, 243, 80, 0.4);
+}

@@ -1,0 +1,124 @@
+/*------- colors  ------*/ /* ---- mixins -----*/ /*----- typo mixins -----*/ /*--------- base -------*/
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  /*height: 100%;*/
+  font-family: "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  color: black;
+  background-color: rgb(46, 101, 56);
+  min-height: 100vh;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+a, button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #FFFFFF;
+}
+
+.title {
+  font-family: "Helvetica", sans-serif;
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.75rem;
+  color: black;
+  font-size: 3rem;
+}
+
+.subtitle-h3 {
+  font-family: "Helvetica", sans-serif;
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.75rem;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.subtitle-body {
+  font-family: "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  color: #aeafb8;
+  font-size: 1.5rem;
+}
+
+/*@media screen and (min-width: 768px) {
+    html {
+        font-size: 2.1vw;
+    }
+}*/
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 0.83vw;
+  }
+}
+/*                                     */
+/* ------- THE PROJECT BEGINNING  ---- */
+/*                                     */
+.card_container {
+  background-color: #FFFFFF;
+  width: clamp(150px, 150px + 15vw, 500px);
+  color: #0F0F10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: clamp(14px, 0.1rem + 2vw, 18px);
+}
+
+.button {
+  width: 180px;
+  height: 47px;
+  margin: 5px;
+  border: 1px solid #fff;
+  background-color: rgba(133, 127, 127, 0.4);
+  color: #fff;
+}
+
+.imIce {
+  background-color: rgba(56, 66, 117, 0.4);
+}
+
+.imHot {
+  background-color: rgba(127, 92, 46, 0.4);
+}
+
+.b-test {
+  display: block;
+  align-self: center;
+  justify-self: center;
+}
+
+.b-1 {
+  background-color: rgba(235, 243, 80, 0.4);
+}
+
+/*                                     */
+/* ------- THE TEST ZONE ---- *//*# sourceMappingURL=style.css.map */

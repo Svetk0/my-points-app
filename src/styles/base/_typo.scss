@@ -1,0 +1,121 @@
+/*-----  typo    -----*/
+
+/* typo-body-18 */
+.typo-nav {
+    @include typo-body;
+    font-size: 1.125rem;
+    color: $color-wight;
+}
+/* typo-title-36 */
+.typo-title {
+    @include typo-h;
+    font-size: 2.25rem;
+    color: $color-blue;
+}
+
+/* typo-body-18 */
+.typo-comment {
+    @include typo-body;
+    font-size: 1.125rem;
+}
+/* typo-body-16 */
+.typo-textbtn {
+    @include typo-body;
+    font-size: 16px;
+    color: $color-wight;
+}
+/* typo-body-14 */
+.typo-agree-answer {
+    @include typo-body;
+    font-size: 14px;
+}
+/* typo-title-28 */
+.typo-countstat {
+    @include typo-h;
+    font-size: 1.75rem;
+    color: $color-blue;
+}
+
+/* typo-title-30 */
+.typo-blockname {
+    @include typo-h;
+    font-size: 1.875rem;
+    color: $color-blue;
+}
+
+/* typo-body-16 */
+.typo-info {
+    @include typo-body;
+    font-size: 1rem;
+}
+
+/* typo-body-16-bold */
+.typo-info-bold {
+    @include typo-body-bold;
+    font-size: 1rem;
+}
+
+/* typo-body-12 */
+.typo-copyright {
+    @include typo-body;
+    font-size: 12px;
+    color: $color-blue;
+}
+.typo-text-20px {
+    @include typo-body;
+    font-size: 1.25rem;
+}
+/* typo-body-24 */
+.typo-textadvant {
+    @include typo-body;
+    color: $color-blue;
+    font-size: 1.5rem;
+}
+
+/* typo-title-60 */
+.typo-countgreen {
+    @include typo-h;
+    color: $color-green;
+    font-size: 3.75rem;
+}
+
+@media screen and (min-width: 768px) {
+    .typo-title {
+        font-size: 2.625rem;
+    }
+
+    .typo-countstat {
+        font-size: 2rem;
+    }
+
+    .typo-blockname {
+        font-size: 2.25rem;
+    }
+
+    .typo-textgreen {
+        font-size: 1.5rem;
+    }
+
+    .typo-btn-agree {
+        font-size: 1rem;
+    }
+
+    .typo-agree-answer {
+        font-size: 16px;
+    }
+    .typo-copyright {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (min-width: 1600px) {
+    .typo-nav {
+        font-size: 0.875rem;
+        color: $color-blue;
+    }
+
+    .typo-countstat {
+        font-size: 2.25rem;
+    }
+}

@@ -1,0 +1,15 @@
+.card_container {
+    background-color: $color-white;
+    width: clamp(150px, 150px + 15vw, 500px);
+    color: $color-black;
+    @include center;
+    flex-direction: column;
+    
+}
+
+.card-description {
+    @include spaceBetween;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: clamp(14px, 0.1rem + 2vw, 18px);
+}
