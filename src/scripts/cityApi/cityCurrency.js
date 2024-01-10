@@ -14,19 +14,19 @@ export default function enteredCity() {
     let autoCompleteInput = document.querySelector('#input');
     console.log('City input: ' + autoCompleteInput.value);
     getCountryData(autoCompleteInput.value);
-    printCityName(autoCompleteInput.value);
+    //printCityName(autoCompleteInput.value);
     document.querySelector('#input').value = '';
 }
 
 let countryNames = [];
 
 function printCurrency(currency) { 
-    console.log('currency:');
+    //console.log('currency:');
     cityCurrency.textContent = 'Currency: '+currency;
 }
 
 function printCityName(city) { 
-    console.log('cityName:');
+    //console.log('cityName:');
     cityName.textContent = city;
 
 }
@@ -35,7 +35,8 @@ async function getCountryData(capitalCity) {
     const data = await countryResource.json()
     console.log(data);
     //printCurrency(data.currencies[Object.keys(data[0].currencies)[0]].name);
-    printCurrency((data[0].currencies[Object.keys(data[0].currencies)[0]].name)+ ' ('+(data[0].currencies[Object.keys(data[0].currencies)[0]].symbol)+')');
+    printCurrency((data[0].currencies[Object.keys(data[0].currencies)[0]].name) + ' (' + (data[0].currencies[Object.keys(data[0].currencies)[0]].symbol) + ')');
+    printCityName(data[0].capital);
 
     countryNames = data.map((country) => {
         return country.name.common;
