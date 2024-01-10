@@ -7,14 +7,15 @@
     
 }
 .autocompleteInput {
-   
+    flex:60%;
     height: 2rem;
-    
+    min-width: 100px;
     border-radius: 5px;
     border: 1px solid #fff;
-    
+    padding-left: 10px;
     color: $input-color;
-    flex:60%;
+    font-weight: 600;
+   
    
 
 }
