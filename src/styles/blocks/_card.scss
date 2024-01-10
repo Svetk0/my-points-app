@@ -1,9 +1,13 @@
 .card_container {
     background-color: $color-white;
-    width: clamp(150px, 150px + 15vw, 500px);
+   width: 100%;
     color: $color-black;
     @include center;
     flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    margin: 10px 0px;
+    
     
 }
 
