@@ -35,7 +35,7 @@ async function getCountryData(capitalCity) {
     const data = await countryResource.json()
     console.log(data);
     //printCurrency(data.currencies[Object.keys(data[0].currencies)[0]].name);
-    //printCurrency(Object.keys(data[0].capital[Object.keys([0])]));
+    printCurrency((data[0].currencies[Object.keys(data[0].currencies)[0]].name)+ ' ('+(data[0].currencies[Object.keys(data[0].currencies)[0]].symbol)+')');
 
     countryNames = data.map((country) => {
         return country.name.common;
