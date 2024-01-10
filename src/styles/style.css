@@ -14,9 +14,12 @@ html {
   line-height: normal;
   margin: 0;
   color: black;
-  background-color: rgb(46, 101, 56);
+  background-color: rgb(5, 2, 39);
   min-height: 100vh;
   font-family: Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 a, button {
@@ -29,6 +32,8 @@ a, button {
   align-items: center;
   flex-direction: column;
   color: #FFFFFF;
+  width: 70vw;
+  padding: 5px;
 }
 
 .title {
@@ -57,7 +62,7 @@ a, button {
   font-weight: 400;
   line-height: normal;
   margin: 0;
-  color: #aeafb8;
+  color: black;
   font-size: 1.5rem;
 }
 
@@ -76,12 +81,15 @@ a, button {
 /*                                     */
 .card_container {
   background-color: #FFFFFF;
-  width: clamp(150px, 150px + 15vw, 500px);
+  width: 100%;
   color: #0F0F10;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  margin: 10px 0px;
 }
 
 .card-description {
@@ -91,23 +99,35 @@ a, button {
   flex-direction: column;
   align-items: flex-start;
   font-size: clamp(14px, 0.1rem + 2vw, 18px);
+  margin-bottom: 20px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.autocompleteInput {
+  flex: 60%;
+  height: 2rem;
+  min-width: 100px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  padding-left: 10px;
+  color: rgb(5, 75, 215);
+  font-weight: 600;
 }
 
 .button {
-  width: 180px;
-  height: 47px;
-  margin: 5px;
+  width: 100px;
+  height: 2rem;
+  border-radius: 5px;
   border: 1px solid #fff;
-  background-color: rgba(133, 127, 127, 0.4);
+  background-color: rgb(5, 75, 215);
   color: #fff;
-}
-
-.imIce {
-  background-color: rgba(56, 66, 117, 0.4);
-}
-
-.imHot {
-  background-color: rgba(127, 92, 46, 0.4);
 }
 
 .b-test {
