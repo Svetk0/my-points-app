@@ -1,4 +1,5 @@
 {
+  "homepage": "http://Svetk0.github.io/my-points-app",
   "name": "my-points-vite-app",
   "private": true,
   "version": "0.0.0",
@@ -6,9 +7,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "vite": "^5.0.8"
   },
   "dependencies": {
