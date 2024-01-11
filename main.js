@@ -1,3 +1,2 @@
-
-
-console.log('hi, the app works correctly!');
+import "./src/scripts/cityApi/cityCurrency.js"
+//console.log('test-check:');

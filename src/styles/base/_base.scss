@@ -9,9 +9,11 @@ html {
     padding: 0;
     /*height: 100%;*/
     @include typo-body;
-    background-color: rgb(46, 101, 56);
+    background-color: $html-background-color;
     min-height: 100vh;
     font-family: Helvetica, Arial, sans-serif;
+    @include center;
+    
 }
 
 a, button {
@@ -22,6 +24,9 @@ a, button {
     @include center;
     flex-direction: column;
     color: $color-white;
+    width: 70vw;
+    padding: 5px;
+    
   
 }
 .title {
