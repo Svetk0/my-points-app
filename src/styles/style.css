@@ -81,7 +81,28 @@ a, button {
 }
 /*                                     */
 /* ------- THE PROJECT BEGINNING  ---- */
-/*                                     */
+   
+.card_container_main {
+  width: 100%;
+  color: #0F0F10;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 10px ;
+}
+.card_main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 2%;
+  width: 100%;
+}                                
 .card_container {
   width: 100%;
   color: #0F0F10;
