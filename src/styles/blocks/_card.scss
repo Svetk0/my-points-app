@@ -1,12 +1,12 @@
 .card_container {
     background-color: $color-white;
-   width: 100%;
-    color: $color-black;
-    @include center;
-    flex-direction: column;
-    border-radius: 5px;
-    border: 1px solid #fff;
-    margin: 10px 0px;
+    width: 100%;
+    color: #0F0F10;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px ;
     
     
 }
