@@ -3,7 +3,7 @@ import "./src/scripts/cityApi/cityCurrency.js"
 
 import "./src/scripts/cityApi/usefulInfo.js"
 
-const apiKeyWeather = "171c28a2dc0957941680747b5a775d1b";
+const apiKeyWeather = '171c28a2dc0957941680747b5a775d1b';
 
 const apiUrlWeather = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=`;
 
@@ -17,9 +17,8 @@ async function checkWeather (city) {
     console.log(data);
 
     document.querySelector(".temperature").innerHTML = Math.round(data.main.temp) + "&#8451";
-    document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
-    document.querySelector(".wind").innerHTML = data.wind.speed + "km/h";
-    
+    document.querySelector(".humidity").innerHTML =`Humidity: ` + data.main.humidity + "%";
+    document.querySelector(".wind").innerHTML = `Wind: ` + data.wind.speed + "km/h";
 }
 
 searchButton.addEventListener("click", () => {
