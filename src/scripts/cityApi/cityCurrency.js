@@ -8,14 +8,17 @@ const cityCurrency = document.querySelector('.card-currency');
 // const formContainer = document.querySelector('.form_container');
 // const countryInfoContainer = document.querySelector('.countryInfoContainer');
 
-submitBtn.addEventListener('click', enteredCity);
+submitBtn.addEventListener('click', function() {
+    enteredCity();
+    checkWeather(searchInput.value);
+});
 
 export default function enteredCity() { 
     let autoCompleteInput = document.querySelector('#input');
     console.log('City input: ' + autoCompleteInput.value);
     getCountryData(autoCompleteInput.value);
     //printCityName(autoCompleteInput.value);
-    document.querySelector('#input').value = '';
+    // document.querySelector('#input').value = '';
 }
 
 let countryNames = [];
