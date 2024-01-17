@@ -8,7 +8,7 @@ const cityCurrency = document.querySelector('.card-currency');
 // const formContainer = document.querySelector('.form_container');
 // const countryInfoContainer = document.querySelector('.countryInfoContainer');
 
-submitBtn.addEventListener('click', enteredCity);
+submitBtn.addEventListener('click', enteredCity)
 
 export default function enteredCity() { 
     let autoCompleteInput = document.querySelector('#input');
