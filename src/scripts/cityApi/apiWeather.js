@@ -10,7 +10,7 @@ export default async function checkWeather (city) {
     const data = await response.json();
     console.log(data);
 
-    document.querySelector(".temperature").innerHTML = Math.round(data.main.temp) + "&#8451";
+    document.querySelector(".temperature").innerHTML = 'Temperature: ' +Math.round(data.main.temp) + "&#8451";
     document.querySelector(".humidity").innerHTML =`Humidity: ` + data.main.humidity + "%";
     document.querySelector(".wind").innerHTML = `Wind: ` + data.wind.speed + "km/h";
 }
