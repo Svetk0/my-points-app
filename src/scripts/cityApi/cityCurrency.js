@@ -44,14 +44,11 @@ async function getCountryData(capitalCity) {
 
     //currency output
     printCurrency((data[0].currencies[Object.keys(data[0].currencies)[0]].name) + ' (' + (data[0].currencies[Object.keys(data[0].currencies)[0]].symbol) + ')');
-
     //name of city output
     printCityName(data[0].capital);
-
     //name of country output
     printCountryName((data[0].name.common));
-
-    //
+    //a link in maps
     printLocation((data[0].maps.googleMaps));
 
     countryNames = data.map((country) => {
