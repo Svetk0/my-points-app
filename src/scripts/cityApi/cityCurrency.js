@@ -15,7 +15,7 @@ export default function enteredCity() {
     console.log('City input: ' + autoCompleteInput.value);
     getCountryData(autoCompleteInput.value);
     //printCityName(autoCompleteInput.value);
-    // document.querySelector('#input').value = '';
+    document.querySelector('#input').value = '';
 }
 
 let countryNames = [];
