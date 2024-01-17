@@ -28,7 +28,7 @@ function printCurrency(currency) {
     cityCurrency.textContent = 'Currency: ' + currency;
 }
 function printCountryName(countryNameOf) {
-    countryName.textContent = 'Country Name: ' + countryNameOf;
+    countryName.textContent = 'Country: ' + countryNameOf;
 }
 function printCityName(city) {
     cityName.textContent = city;
