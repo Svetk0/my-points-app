@@ -208,5 +208,14 @@ a, button {
   align-self: center;
 }
 
+.text_line {
+  display: flex;
+  align-items:flex-start;
+  color: #FFFFFF;
+  width: 70vw;
+  padding: 10px;
+  padding-bottom: 15px;
+  font-size: 1.3rem;
+}
 /*                                     */
 /* ------- THE TEST ZONE ---- *//*# sourceMappingURL=style.css.map */
