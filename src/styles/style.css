@@ -1,4 +1,7 @@
-/*------- colors  ------*/ /* ---- mixins -----*/ /*----- typo mixins -----*/ /*--------- base -------*/
+/*------- colors  ------*/
+/* ---- mixins -----*/
+/*----- typo mixins -----*/
+/*--------- base -------*/
 * {
   box-sizing: border-box;
 }
@@ -119,6 +122,16 @@ a, button {
   margin: 1vw;
 }
 
+.learnMoreBtn {
+  width: 100px;
+  height: 2rem;
+  margin-top: 2%;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background-color: rgb(5, 75, 215);
+  color: #fff;
+}
+
 .form {
   width: 100%;
   display: flex;
@@ -176,7 +189,7 @@ a, button {
   background-color: #FFFFFF;
   border: 1px solid #fff;
   border-radius: 5px;
-  padding: 2%;
+  padding: 8%;
   width: 100%;
   margin: 1vw;
 }
