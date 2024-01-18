@@ -217,5 +217,15 @@ a, button {
   padding-bottom: 15px;
   font-size: 1.3rem;
 }
+
+.currentDate {
+  display: flex;
+  align-items: flex-end;
+  color: #FFFFFF;
+  /* width: 70vw;
+  padding: 10px; */
+  padding-bottom: 5px;
+  font-size: 1.3rem;
+}
 /*                                     */
 /* ------- THE TEST ZONE ---- *//*# sourceMappingURL=style.css.map */
