@@ -223,6 +223,7 @@ a, button {
 .card-subtitle {
   text-align: center;
   align-self: center;
+  margin: 0;
 }
 
 .card-row {

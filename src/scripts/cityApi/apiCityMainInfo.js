@@ -5,7 +5,7 @@
 const submitBtn = document.querySelector('.submitBtn');
 const cityName = document.querySelector('.card-name');
 const cityCurrency = document.querySelector('.card-currency');
-const countryName = document.querySelector('.card-info');
+const countryName = document.querySelector('.card-country');
 const mapLocation = document.querySelector('.card-timezone-link');
 const containerErrors = document.querySelector('.card-main-error');
 // const formContainer = document.querySelector('.form_container');
