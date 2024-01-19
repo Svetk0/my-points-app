@@ -61,7 +61,7 @@ async function getCountryData(capitalCity) {
     catch (error) { 
         containerErrors.style.display = 'flex';
         console.error('Ошибка в поиске города:', error);
-        containerErrors.textContent = 'Ошибка в поиске города: \n' +error;
+        containerErrors.textContent = 'Ошибка в поиске города: \n' +error.name + ' ----> необходимо ввести столицу';
     }
 }
 

@@ -95,7 +95,7 @@ a, button {
   color: rgb(5, 75, 215);
 }
 
-.card-description, .card-weather {
+.card-description, .card-weather, .card-description-main {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -206,12 +206,19 @@ a, button {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 5vw;
+}
+
+.card-description-main {
+  max-width: 60%;
 }
 
 .card-subtitle {
   text-align: center;
   align-self: center;
+}
+
+.card-row {
+  margin-top: 5px;
 }
 
 .card-main-error {
@@ -221,6 +228,26 @@ a, button {
   padding: 10px;
   margin: 20px 1vw;
   border-radius: 5px;
+}
+
+.text_line {
+  display: flex;
+  color: #FFFFFF;
+  width: 70vw;
+  padding: 10px;
+  padding-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.currentDate {
+  display: flex;
+  justify-content: end;
+  color: #FFFFFF;
+  width: 70vw;
+  padding: 10px;
+  padding-bottom: 5px;
+  padding-right: 13%;
+  font-size: 1.1rem;
 }
 
 /*                                     */
