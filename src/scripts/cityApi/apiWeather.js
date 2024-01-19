@@ -5,13 +5,21 @@ const searchInput = document.querySelector(".autocompleteInput");
 const searchButton = document.querySelector(".submitBtn");
 
 export default async function checkWeather (city) {
-    const response = await fetch(apiUrlWeather + city + `&appid=${apiKeyWeather}`);
-    const data = await response.json();
-    console.log(data);
+    try {
+        const response = await fetch(apiUrlWeather + city + `&appid=${apiKeyWeather}`);
+        const data = await response.json();
+        console.log(data);
 
-    document.querySelector(".temperature").innerHTML = 'Temperature: ' +Math.round(data.main.temp) + "&#8451";
-    document.querySelector(".humidity").innerHTML =`Humidity: ` + data.main.humidity + "%";
-    document.querySelector(".wind").innerHTML = `Wind: ` + data.wind.speed + "km/h";
+        document.querySelector(".temperature").innerHTML = 'Temperature: ' +Math.round(data.main.temp) + "&#8451";
+        document.querySelector(".humidity").innerHTML =`Humidity: ` + data.main.humidity + "%";
+        document.querySelector(".wind").innerHTML = `Wind: ` + data.wind.speed + "km/h";
+    } 
+    catch (error) { 
+        console.log(error);
+        document.querySelector(".temperature").innerHTML = `Error: No information found`;
+        document.querySelector(".humidity").innerHTML =``;
+        document.querySelector(".wind").innerHTML = ``;
+    }
 }
 
 searchButton.addEventListener("click", () => {
@@ -26,8 +34,7 @@ searchInput.addEventListener("keydown", (event) => {
     }
     });
 
-    const currentDate = document.querySelector('.currentDate');
-
+const currentDate = document.querySelector('.currentDate');
     let Data = new Date();
     let year = Data.getFullYear();
     let month = Data.getMonth();
@@ -35,15 +42,14 @@ searchInput.addEventListener("keydown", (event) => {
     let hours = zero_first_format(Data.getHours());
     let minutes = zero_first_format(Data.getMinutes());
     
-    function zero_first_format(value) {
-        if (value < 10)
-        {
+function zero_first_format(value) {
+        if (value < 10) {
             value='0'+value;
         }
         return value;
     }
 
-    switch (month) {
+switch (month) {
         case 0: month="Jan."; break;
         case 1: month="Feb."; break;
         case 2: month="Mar."; break;
@@ -58,4 +64,4 @@ searchInput.addEventListener("keydown", (event) => {
         case 11: month="Dec."; break;
     }
     
-    currentDate.innerHTML = "Today is " + day + " " + month + " " + year + "   " + hours + ':' + minutes;
+currentDate.innerHTML = "Today is " + day + " " + month + " " + year + "   " + hours + ':' + minutes;
