@@ -27,11 +27,17 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 5vw;
+    //gap: 5vw;
   }
+  .card-description-main {
+    max-width: 60%;
+}
   .card-subtitle{
     text-align: center;
     align-self: center;
+  }
+  .card-row {
+    margin-top: 5px;
   }
 
   .card-main-error{
