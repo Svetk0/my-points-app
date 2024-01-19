@@ -24,7 +24,12 @@
     font-size: clamp(14px, 0.1rem + 2vw, 18px);
     margin-bottom: 20px;
 }
-
+.card-description {
+    max-width: 90%;
+}
+.card-weather {
+    min-width: 10rem;
+}
 // cards that were saved before 
 .card {
     display: flex;
@@ -34,7 +39,7 @@
     background-color: #FFFFFF;
     border: 1px solid #fff;
     border-radius: 5px;
-    padding: 2%;
+    padding: 1%;
     //width: 100%;
     flex: 25%;
     background-color: $color-white;
