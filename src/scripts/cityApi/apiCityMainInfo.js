@@ -21,6 +21,10 @@ export default function enteredCity() {
     console.log('City input: ' + autoCompleteInput.value);
     getCountryData(autoCompleteInput.value);
     containerErrors.style.display = 'none';
+    cityCurrency.textContent = '';
+    countryName.textContent = '';
+    mapLocation.href = '';
+    cityName.textContent = '';
     //printCityName(autoCompleteInput.value);
     ////document.querySelector('#input').value = '';
 }
@@ -61,7 +65,7 @@ async function getCountryData(capitalCity) {
     catch (error) { 
         containerErrors.style.display = 'flex';
         console.error('Ошибка в поиске города:', error);
-        containerErrors.textContent = 'Ошибка в поиске города: \n' +error.name + ' ----> необходимо ввести столицу';
+        containerErrors.textContent = 'Ошибка в поиске города: \n' +error.name + ' ----> для полной информации необходимо ввести столицу';
     }
 }
 
