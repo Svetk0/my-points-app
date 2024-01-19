@@ -118,6 +118,7 @@ a, button {
 
 .card-weather {
   min-width: 10rem;
+  margin-left: 2rem;
 }
 
 .card {
