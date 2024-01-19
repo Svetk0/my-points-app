@@ -210,22 +210,22 @@ a, button {
 
 .text_line {
   display: flex;
-  align-items:flex-start;
   color: #FFFFFF;
   width: 70vw;
   padding: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   font-size: 1.3rem;
 }
 
 .currentDate {
   display: flex;
-  align-items: flex-end;
+  justify-content: end;
   color: #FFFFFF;
-  /* width: 70vw;
-  padding: 10px; */
+  width: 70vw;
+  padding: 10px; 
   padding-bottom: 5px;
-  font-size: 1.3rem;
+  padding-right: 13%;
+  font-size: 1.1rem;
 }
 /*                                     */
 /* ------- THE TEST ZONE ---- *//*# sourceMappingURL=style.css.map */
