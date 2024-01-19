@@ -1,7 +1,4 @@
-/*------- colors  ------*/
-/* ---- mixins -----*/
-/*----- typo mixins -----*/
-/*--------- base -------*/
+/*------- colors  ------*/ /* ---- mixins -----*/ /*----- typo mixins -----*/ /*--------- base -------*/
 * {
   box-sizing: border-box;
 }
@@ -208,24 +205,5 @@ a, button {
   align-self: center;
 }
 
-.text_line {
-  display: flex;
-  color: #FFFFFF;
-  width: 70vw;
-  padding: 10px;
-  padding-bottom: 10px;
-  font-size: 1.3rem;
-}
-
-.currentDate {
-  display: flex;
-  justify-content: end;
-  color: #FFFFFF;
-  width: 70vw;
-  padding: 10px; 
-  padding-bottom: 5px;
-  padding-right: 13%;
-  font-size: 1.1rem;
-}
 /*                                     */
 /* ------- THE TEST ZONE ---- *//*# sourceMappingURL=style.css.map */
