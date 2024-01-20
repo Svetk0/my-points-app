@@ -48,7 +48,7 @@ button:hover {
   align-items: center;
   flex-direction: column;
   color: #FFFFFF;
-  padding: 3vw;
+  padding: 2vw;
 }
 
 .title {
@@ -178,7 +178,7 @@ div {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
-  margin: 1rem 0 0 0;
+  margin: 2rem 0;
   padding: 0 7vw;
 }
 
@@ -220,7 +220,7 @@ div {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  margin: 10px;
+  margin: 10px 0;
 }
 
 .card_main {
