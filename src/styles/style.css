@@ -1,7 +1,4 @@
-/*------- colors  ------*/
-/* ---- mixins -----*/
-/*----- typo mixins -----*/
-/*--------- base -------*/
+/*------- colors  ------*/ /* ---- mixins -----*/ /*----- typo mixins -----*/ /*--------- base -------*/
 * {
   box-sizing: border-box;
 }
@@ -151,7 +148,7 @@ button:hover {
   border: 1px solid #fff;
   border-radius: 5px;
   padding: 1%;
-  flex: 25%;
+  flex: 45%;
   background-color: #FFFFFF;
   margin: 1vw;
   height: 400px;
