@@ -31,14 +31,18 @@ h1 {
   font-size: 3rem;
 }
 
-a, button {
+.fa-solid {
+  font-size: 45pt;
+}
+
+button {
   -webkit-tap-highlight-color: transparent;
   font-family: "Grape Nuts", cursive;
   background: rgb(174, 229, 238);
   background: radial-gradient(circle, rgb(174, 229, 238) 0%, rgb(37, 103, 223) 100%);
 }
 
-a, button:hover {
+button:hover {
   background: rgb(189, 174, 238);
   background: radial-gradient(circle, rgb(189, 174, 238) 0%, rgb(148, 187, 233) 100%);
 }
@@ -147,7 +151,7 @@ a, button:hover {
   border: 1px solid #fff;
   border-radius: 5px;
   padding: 1%;
-  flex: 45%;
+  flex: 25%;
   background-color: #FFFFFF;
   margin: 1vw;
   height: 400px;
@@ -161,6 +165,7 @@ a, button:hover {
   border: 1px solid #fff;
   background-color: rgb(5, 75, 215);
   color: #fff;
+  align-items: center;
 }
 
 .londonMap, .berlinMap, .sydneyMap, .tokyoMap {
