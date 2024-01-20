@@ -1,7 +1,4 @@
-/*------- colors  ------*/
-/* ---- mixins -----*/
-/*----- typo mixins -----*/
-/*--------- base -------*/
+/*------- colors  ------*/ /* ---- mixins -----*/ /*----- typo mixins -----*/ /*--------- base -------*/
 * {
   box-sizing: border-box;
 }
@@ -95,6 +92,13 @@ a, button:hover {
 /*                                     */
 /* ------- THE PROJECT BEGINNING  ---- */
 /*                                     */
+.savedCards-title {
+  color: #fff;
+  margin: 30px 0px 0px 0px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
 .card_container {
   width: 100%;
   color: #0F0F10;
@@ -112,7 +116,7 @@ a, button:hover {
   color: rgb(5, 75, 215);
 }
 
-.card-description, .card-weather {
+.card-description, .card-weather, .card-description-main {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -120,6 +124,15 @@ a, button:hover {
   align-items: flex-start;
   font-size: clamp(14px, 0.1rem + 2vw, 18px);
   margin-bottom: 20px;
+}
+
+.card-description {
+  max-width: 90%;
+}
+
+.card-weather {
+  min-width: 10rem;
+  margin-left: 2rem;
 }
 
 .card {
@@ -130,7 +143,7 @@ a, button:hover {
   background-color: #FFFFFF;
   border: 1px solid #fff;
   border-radius: 5px;
-  padding: 2%;
+  padding: 1%;
   flex: 25%;
   background-color: #FFFFFF;
   margin: 1vw;
@@ -161,6 +174,7 @@ div {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
+  margin: 1rem 0 0 0;
 }
 
 .autocompleteInput {
@@ -212,7 +226,7 @@ div {
   background-color: #FFFFFF;
   border: 1px solid #fff;
   border-radius: 5px;
-  padding: 8%;
+  padding: 3%;
   width: 100%;
   margin: 1vw;
 }
@@ -222,13 +236,51 @@ div {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  gap: 5vw;
+  align-items: flex-start;
+}
+
+.card-description-main {
+  max-width: 60%;
 }
 
 .card-subtitle {
   text-align: center;
   align-self: center;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.card-row {
+  margin-top: 5px;
+}
+
+.card-main-error {
+  background-color: #e8cbcb;
+  color: rgb(125, 21, 21);
+  width: 80%;
+  padding: 10px;
+  margin: 20px 1vw;
+  border-radius: 5px;
+}
+
+.text_line {
+  display: flex;
+  color: #FFFFFF;
+  width: 70vw;
+  padding: 10px;
+  padding-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.currentDate {
+  display: flex;
+  justify-content: end;
+  color: #FFFFFF;
+  width: 70vw;
+  padding: 10px;
+  padding-bottom: 5px;
+  padding-right: 13%;
+  font-size: 1.1rem;
 }
 
 /*                                     */

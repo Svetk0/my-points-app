@@ -16,7 +16,7 @@
     background-color: #FFFFFF;
     border: 1px solid #fff;
     border-radius: 5px;
-    padding: 8%;
+    padding: 3%;
     width: 100%;
     margin: 1vw;
   }
@@ -26,11 +26,27 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    gap: 5vw;
+    align-items: flex-start;
+    //gap: 5vw;
   }
+  .card-description-main {
+    max-width: 60%;
+}
   .card-subtitle{
     text-align: center;
     align-self: center;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .card-row {
+    margin-top: 5px;
   }
 
+  .card-main-error{
+    background-color: #e8cbcb;
+    color: rgb(125, 21, 21);
+    width: 80%;
+    padding: 10px;
+    margin: 20px 1vw;
+    border-radius: 5px;
+  }
