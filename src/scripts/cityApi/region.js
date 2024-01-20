@@ -1,6 +1,9 @@
+import { getCountryInfo } from "./apiCountry.js";
 
 const apiKey = "5ae2e3f221c38a28845f05b67a4efd428d2e3973acfdb186db7def8c";
+
 const cityInfo = document.querySelector('.card-timezone');
+const cityNameData = document.querySelector('.card-name');
 
 export default function apiGet(method, query) {
   console.log('query: ' + query);
@@ -32,6 +35,10 @@ document.querySelector('.submitBtn').addEventListener('click', function() {
     .then(data => {
       console.log('Geoname Data:', data);
       cityInfo.textContent = `Region: ${data.timezone}`;
+      console.log('===========  new TEST in region.js =============');
+      console.log(data.country);
+      getCountryInfo(data.country);
+      cityNameData.textContent = data.name;
     })
     .catch(error => {
       console.error('Error fetching Geoname data:', error);
