@@ -5,7 +5,7 @@
 const submitBtn = document.querySelector('.submitBtn');
 const cityName = document.querySelector('.card-name');
 const cityCurrency = document.querySelector('.card-currency');
-const countryName = document.querySelector('.card-info');
+const countryName = document.querySelector('.card-country');
 const mapLocation = document.querySelector('.card-timezone-link');
 const containerErrors = document.querySelector('.card-main-error');
 // const formContainer = document.querySelector('.form_container');
@@ -21,6 +21,10 @@ export default function enteredCity() {
     console.log('City input: ' + autoCompleteInput.value);
     getCountryData(autoCompleteInput.value);
     containerErrors.style.display = 'none';
+    cityCurrency.textContent = '';
+    countryName.textContent = '';
+    mapLocation.href = '';
+    cityName.textContent = '';
     //printCityName(autoCompleteInput.value);
     ////document.querySelector('#input').value = '';
 }
@@ -61,7 +65,7 @@ async function getCountryData(capitalCity) {
     catch (error) { 
         containerErrors.style.display = 'flex';
         console.error('Ошибка в поиске города:', error);
-        containerErrors.textContent = 'Ошибка в поиске города: \n' +error.name + ' ----> необходимо ввести столицу';
+        containerErrors.textContent = 'Ошибка в поиске города: \n' +error.name + ' ----> для полной информации необходимо ввести столицу';
     }
 }
 

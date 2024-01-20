@@ -4,15 +4,32 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="src/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Moirai+One&display=swap" rel="stylesheet">
     <title>My points App</title>
   </head>
   <body>
     <main class="main">
       <h1 class="header">My points App</h1>
-        <div class="text_line">Your cities are always accessible</div>
+      <i class="fa-solid fa-earth-americas"></i>
+      <div class="text_line">Your cities are always accessible</div>
         <div class="currentDate"></div>
       <form class="form" action="#" autocomplete="off">
+        <div class="currentDate"></div>
         <input
           id="input"
           type="text"
@@ -27,25 +44,25 @@
           <h2 class="card-name">Your city</h2>
           <div class="card-container-info">
           <div class="card-description-main">
-            
             <h4 class="card-subtitle">Info</h4>
             <div class="card-timezone card-row">Location: 
-               <a class="card-timezone-link card-row" href="" target="_blank">
-                maps
-              </a>
             </div>
-            
             <div class="card-currency card-row">Currency: </div>
-            <div class="card-info card-row">Country: </div>
-
+            <div class="card-country card-row">Country: </div>
+            <div class="card-row"> Location: 
+              <a class="card-timezone-link" href="" target="_blank">
+               maps
+             </a>
+           </div>
+            <div class="card-info card-row">Attractions:  </div>
           </div>
+
           <div class="card-weather">
             <h4 class="card-subtitle">Current Weather </h4>
             <div class="temperature card-row">Temperature: </div>
             <div class="temperature-feels_like card-row">Temperature: </div>
             <div class="humidity card-row">Humidity: </div>
             <div class="wind card-row"> <strong>Wind: </strong>  </div>
-            
           </div>
         </div>
         </div>
@@ -55,59 +72,67 @@
         <div class="card">
           <h2 class="card-name">London</h2>
           <div class="card-description">
-            <div class="card-timezone">Time Zone (UTC)</div>
-            <div class="card-weather">Current Temperature</div>
-            <div class="card-currency">Currency (USD)</div>
-            <div class="card-map">Map</div>
+            <div class="card-timezone">12:10 (UTC -3)</div>
+            <div class="card-weather">Temperature: 6℃</div>
+            <div class="card-currency">Currency: British pound (£)</div>
+            <div class="card-map"><img class="londonMap" src="src/images/londonMap.png" alt="..."></div>
             <div class="card-hotels">Recomended hotels</div>
             <div class="card-cafes">Recomended cafes</div>
             <div class="card-services">Local services</div>
             <div class="card-info">Additional useful info</div>
+            <form action="https://en.wikipedia.org/wiki/London">
             <button class="learnMoreBtn">Learn More</button>
+          </form>
           </div>
         </div>
         <div class="card">
           <h2 class="card-name">Berlin</h2>
           <div class="card-description">
-            <div class="card-timezone">Time Zone (UTC)</div>
-            <div class="card-weather">Current Temperature</div>
-            <div class="card-currency">Currency (USD)</div>
-            <div class="card-map">Map</div>
+            <div class="card-timezone">13:10(UTC -2)</div>
+            <div class="card-weather">Temperature: 3℃</div>
+            <div class="card-currency">Currency: Euro (€)</div>
+            <div class="card-map"><img class="berlinMap" src="src/images/berlinMap.png" alt="..."></div>
             <div class="card-hotels">Recomended hotels</div>
             <div class="card-cafes">Recomended cafes</div>
             <div class="card-services">Local services</div>
             <div class="card-info">Additional useful info</div>
-            <button class="learnMoreBtn">Learn More</button>
+            <form action="https://ru.wikipedia.org/wiki/Берлин">
+              <button class="learnMoreBtn">Learn More</button>
+            </form>
           </div>
         </div>
         <div class="card">
           <h2 class="card-name">Sydney</h2>
           <div class="card-description">
-            <div class="card-timezone">Time Zone (UTC)</div>
-            <div class="card-weather">Current Temperature</div>
-            <div class="card-currency">Currency (USD)</div>
-            <div class="card-map">Map</div>
+            <div class="card-timezone">23:10(UTC +8)</div>
+            <div class="card-weather">Temperature: 23℃</div>
+            <div class="card-currency">Currency: Australian dollar ($)</div>
+            <div class="card-map"><img class="sydneyMap" src="src/images/sydneyMap.png" alt="..."></div>
             <div class="card-hotels">Recomended hotels</div>
             <div class="card-cafes">Recomended cafes</div>
             <div class="card-services">Local services</div>
             <div class="card-info">Additional useful info</div>
-            <button class="learnMoreBtn">Learn More</button>
+            <form action="https://ru.wikipedia.org/wiki/Сидней">
+              <button class="learnMoreBtn">Learn More</button>
+            </form>
           </div>
         </div>
-        <!-- <div class="card">
+        <div class="card">
           <h2 class="card-name">Tokyo</h2>
           <div class="card-description">
-            <div class="card-timezone">Time Zone (UTC)</div>
-            <div class="card-weather">Current Temperature</div>
-            <div class="card-currency">Currency (USD)</div>
-            <div class="card-map">Map</div>
+            <div class="card-timezone">21:10(UTC +6)</div>
+            <div class="card-weather">Temperature: 5℃</div>
+            <div class="card-currency">Currency: Japanese yen (¥)</div>
+            <div class="card-map"><img class="tokyoMap" src="src/images/tokyoMap.png" alt="..."></div>
             <div class="card-hotels">Recomended hotels</div>
             <div class="card-cafes">Recomended cafes</div>
             <div class="card-services">Local services</div>
             <div class="card-info">Additional useful info</div>
-            <button class="learnMoreBtn">Learn More</button>
+            <form action="https://ru.wikipedia.org/wiki/Токио">
+              <button class="learnMoreBtn">Learn More</button>
+            </form>
           </div>
-        </div> -->
+        </div> 
       </div>
     </main>
 

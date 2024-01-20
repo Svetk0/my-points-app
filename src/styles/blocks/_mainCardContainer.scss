@@ -26,7 +26,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     //gap: 5vw;
   }
   .card-description-main {
@@ -35,6 +35,8 @@
   .card-subtitle{
     text-align: center;
     align-self: center;
+    margin: 0;
+    margin-bottom: 10px;
   }
   .card-row {
     margin-top: 5px;
