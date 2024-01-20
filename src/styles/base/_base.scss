@@ -1,18 +1,19 @@
 /*--------- base -------*/
 * {
     box-sizing: border-box;
+    
 }
 
 body,
 html {
     margin: 0;
     padding: 0;
-    /*height: 100%;*/
+    
     @include typo-body;
     // background-color: $html-background-color;
     //background: rgb(12,38,121);
 background: linear-gradient(180deg, rgba(12,38,121,0.9641981792717087) 17%, rgba(29,145,193,1) 48%, rgba(130,202,255,1) 100%);
-    min-height: 100vh;
+    //height: 100vh;
     font-family: Helvetica, Arial, sans-serif;
     @include center;
     
