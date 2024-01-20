@@ -14,7 +14,6 @@ html {
   line-height: normal;
   margin: 0;
   color: black;
-  background: rgb(12, 38, 121);
   background: linear-gradient(180deg, rgba(12, 38, 121, 0.9641981793) 17%, rgb(29, 145, 193) 48%, rgb(130, 202, 255) 100%);
   min-height: 100vh;
   font-family: Helvetica, Arial, sans-serif;
@@ -25,6 +24,8 @@ html {
 
 h1 {
   font-family: "Moirai One", system-ui;
+  margin: 3rem 0;
+  font-size: 3rem;
 }
 
 a, button {
@@ -45,8 +46,7 @@ a, button:hover {
   align-items: center;
   flex-direction: column;
   color: #FFFFFF;
-  width: 100%;
-  padding: 5px;
+  padding: 3vw;
 }
 
 .title {
@@ -112,7 +112,7 @@ a, button:hover {
 
 .card-name {
   font-family: "Grape Nuts", cursive;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   color: rgb(5, 75, 215);
 }
 
@@ -144,9 +144,10 @@ a, button:hover {
   border: 1px solid #fff;
   border-radius: 5px;
   padding: 1%;
-  flex: 25%;
+  flex: 45%;
   background-color: #FFFFFF;
   margin: 1vw;
+  height: 400px;
 }
 
 .learnMoreBtn {
@@ -175,6 +176,7 @@ div {
   flex-wrap: wrap;
   gap: 10px;
   margin: 1rem 0 0 0;
+  padding: 0 7vw;
 }
 
 .autocompleteInput {
@@ -276,10 +278,10 @@ div {
   display: flex;
   justify-content: end;
   color: #FFFFFF;
-  width: 70vw;
+  width: 100%;
   padding: 10px;
   padding-bottom: 5px;
-  padding-right: 13%;
+  padding-right: 0;
   font-size: 1.1rem;
 }
 

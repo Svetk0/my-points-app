@@ -20,7 +20,7 @@
 }
 .card-name {
     font-family: 'Grape Nuts', cursive;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     color:$name-color;
 
 }
@@ -49,9 +49,10 @@
     border-radius: 5px;
     padding: 1%;
     //width: 100%;
-    flex: 25%;
+    flex: 45%;
     background-color: $color-white;
     margin: 1vw;
+    height: 400px;
   }
   .learnMoreBtn{
     width: 100px;
