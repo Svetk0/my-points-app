@@ -18,7 +18,8 @@ export default async function checkWeather (city) {
     catch (error) { 
         console.log(error);
         document.querySelector(".temperature").innerHTML = `Error: No information found`;
-        document.querySelector(".humidity").innerHTML =``;
+        document.querySelector(".temperature-feels_like").innerHTML = ``;
+        document.querySelector(".humidity").innerHTML = ``;
         document.querySelector(".wind").innerHTML = ``;
     }
 }
