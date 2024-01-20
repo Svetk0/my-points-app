@@ -7,20 +7,39 @@ body,
 html {
   margin: 0;
   padding: 0;
-  /*height: 100%;*/
   font-family: "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   margin: 0;
   color: black;
-  background-color: rgb(46, 101, 56);
-  min-height: 100vh;
+  background: linear-gradient(180deg, rgba(12, 38, 121, 0.9641981793) 17%, rgb(29, 145, 193) 48%, rgb(130, 202, 255) 100%);
   font-family: Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-a, button {
+h1 {
+  font-family: "Moirai One", system-ui;
+  margin: 3rem 0;
+  font-size: 3rem;
+}
+
+.fa-solid {
+  font-size: 45pt;
+}
+
+button {
   -webkit-tap-highlight-color: transparent;
+  font-family: "Grape Nuts", cursive;
+  background: rgb(174, 229, 238);
+  background: radial-gradient(circle, rgb(174, 229, 238) 0%, rgb(37, 103, 223) 100%);
+}
+
+button:hover {
+  background: rgb(189, 174, 238);
+  background: radial-gradient(circle, rgb(189, 174, 238) 0%, rgb(148, 187, 233) 100%);
 }
 
 .main {
@@ -29,6 +48,7 @@ a, button {
   align-items: center;
   flex-direction: column;
   color: #FFFFFF;
+  padding: 2vw;
 }
 
 .title {
@@ -57,7 +77,7 @@ a, button {
   font-weight: 400;
   line-height: normal;
   margin: 0;
-  color: #aeafb8;
+  color: black;
   font-size: 1.5rem;
 }
 
@@ -74,40 +94,112 @@ a, button {
 /*                                     */
 /* ------- THE PROJECT BEGINNING  ---- */
 /*                                     */
-.card_container {
-  background-color: #FFFFFF;
-  width: clamp(150px, 150px + 15vw, 500px);
-  color: #0F0F10;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.savedCards-title {
+  color: #fff;
+  margin: 30px 0px 0px 0px;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
-.card-description {
+.card_container {
+  width: 100%;
+  color: #0F0F10;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.card-name {
+  font-family: "Grape Nuts", cursive;
+  font-size: 2.2rem;
+  color: rgb(5, 75, 215);
+}
+
+.card-description, .card-weather, .card-description-main {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
   align-items: flex-start;
   font-size: clamp(14px, 0.1rem + 2vw, 18px);
+  margin-bottom: 20px;
+}
+
+.card-description {
+  max-width: 90%;
+}
+
+.card-weather {
+  min-width: 10rem;
+  margin-left: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 1%;
+  flex: 45%;
+  background-color: #FFFFFF;
+  margin: 1vw;
+  height: 400px;
+}
+
+.learnMoreBtn {
+  width: 100px;
+  height: 2rem;
+  margin-top: 2%;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background-color: rgb(5, 75, 215);
+  color: #fff;
+  align-items: center;
+}
+
+.londonMap, .berlinMap, .sydneyMap, .tokyoMap {
+  height: 100px;
+  width: 150px;
+}
+
+div {
+  font-family: "Quicksand", sans-serif;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 2rem 0;
+  padding: 0 7vw;
+}
+
+.autocompleteInput {
+  flex: 60%;
+  height: 2rem;
+  min-width: 100px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  padding-left: 10px;
+  color: rgb(5, 75, 215);
+  font-weight: 600;
 }
 
 .button {
-  width: 180px;
-  height: 47px;
-  margin: 5px;
+  width: 100px;
+  height: 2rem;
+  border-radius: 5px;
   border: 1px solid #fff;
-  background-color: rgba(133, 127, 127, 0.4);
+  background-color: rgb(5, 75, 215);
   color: #fff;
-}
-
-.imIce {
-  background-color: rgba(56, 66, 117, 0.4);
-}
-
-.imHot {
-  background-color: rgba(127, 92, 46, 0.4);
 }
 
 .b-test {
@@ -118,6 +210,83 @@ a, button {
 
 .b-1 {
   background-color: rgba(235, 243, 80, 0.4);
+}
+
+.card_container_main {
+  width: 100%;
+  color: #0F0F10;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 10px 0;
+}
+
+.card_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 3%;
+  width: 100%;
+  margin: 1vw;
+}
+
+.card-container-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card-description-main {
+  max-width: 60%;
+}
+
+.card-subtitle {
+  text-align: center;
+  align-self: center;
+  margin: 0;
+  margin-bottom: 10px;
+  color: rgb(11, 127, 89);
+}
+
+.card-row {
+  margin-top: 5px;
+}
+
+.card-main-error {
+  background-color: #e8cbcb;
+  color: rgb(125, 21, 21);
+  width: 80%;
+  padding: 10px;
+  margin: 20px 1vw;
+  border-radius: 5px;
+}
+
+.text_line {
+  display: flex;
+  color: #FFFFFF;
+  width: 70vw;
+  padding: 10px;
+  padding-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.currentDate {
+  display: flex;
+  justify-content: end;
+  color: #FFFFFF;
+  width: 100%;
+  padding: 10px;
+  padding-bottom: 5px;
+  padding-right: 0;
+  font-size: 1.1rem;
 }
 
 /*                                     */
