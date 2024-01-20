@@ -10,7 +10,7 @@ html {
     /*height: 100%;*/
     @include typo-body;
     // background-color: $html-background-color;
-    background: rgb(12,38,121);
+    //background: rgb(12,38,121);
 background: linear-gradient(180deg, rgba(12,38,121,0.9641981792717087) 17%, rgba(29,145,193,1) 48%, rgba(130,202,255,1) 100%);
     min-height: 100vh;
     font-family: Helvetica, Arial, sans-serif;
@@ -19,11 +19,12 @@ background: linear-gradient(180deg, rgba(12,38,121,0.9641981792717087) 17%, rgba
 }
 h1{
     font-family: 'Moirai One', system-ui;
+    margin: 3rem 0;
+    font-size: 3rem;
 }
- .fa-solid{
+.fa-solid{
     font-size: 45pt;
  }
-
 button {
     -webkit-tap-highlight-color: transparent;
     font-family: 'Grape Nuts', cursive;
@@ -39,8 +40,8 @@ background: radial-gradient(circle, rgba(189,174,238,1) 0%, rgba(148,187,233,1) 
     @include center;
     flex-direction: column;
     color: $color-white;
-    width: 100%;
-    padding: 5px;
+    //max-width: 95vw;
+    padding: 3vw;
     
   
 }
