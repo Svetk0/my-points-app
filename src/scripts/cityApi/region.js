@@ -35,8 +35,7 @@ document.querySelector('.submitBtn').addEventListener('click', function() {
     .then(data => {
       console.log('Geoname Data:', data);
       cityInfo.textContent = `Region: ${data.timezone}`;
-      console.log('===========  new TEST in region.js =============');
-      console.log(data.country);
+      
       getCountryInfo(data.country);
       cityNameData.textContent = data.name;
     })
