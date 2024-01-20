@@ -20,14 +20,17 @@ background: linear-gradient(180deg, rgba(12,38,121,0.9641981792717087) 17%, rgba
 h1{
     font-family: 'Moirai One', system-ui;
 }
+ .fa-solid{
+    font-size: 45pt;
+ }
 
-a, button {
+button {
     -webkit-tap-highlight-color: transparent;
     font-family: 'Grape Nuts', cursive;
     background: rgb(174,229,238);
 background: radial-gradient(circle, rgba(174,229,238,1) 0%, rgba(37,103,223,1) 100%);
 }
-a, button:hover {
+button:hover {
     background: rgb(189,174,238);
 background: radial-gradient(circle, rgba(189,174,238,1) 0%, rgba(148,187,233,1) 100%);
 }
