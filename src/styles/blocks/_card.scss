@@ -13,6 +13,7 @@
     
 }
 .card-name {
+    font-family: 'Grape Nuts', cursive;
     font-size: 1.8rem;
     color:$name-color;
 
@@ -50,4 +51,11 @@
     color: #fff;
   }
 
+.londonMap, .berlinMap, .sydneyMap, .tokyoMap{
+    height: 100px;
+    width: 150px;
+}
 
+div{
+    font-family: 'Quicksand', sans-serif; 
+}

@@ -17,7 +17,8 @@ html {
   line-height: normal;
   margin: 0;
   color: black;
-  background-color: rgb(5, 2, 39);
+  background: rgb(12, 38, 121);
+  background: linear-gradient(180deg, rgba(12, 38, 121, 0.9641981793) 17%, rgb(29, 145, 193) 48%, rgb(130, 202, 255) 100%);
   min-height: 100vh;
   font-family: Helvetica, Arial, sans-serif;
   display: flex;
@@ -25,8 +26,20 @@ html {
   align-items: center;
 }
 
+h1 {
+  font-family: "Moirai One", system-ui;
+}
+
 a, button {
   -webkit-tap-highlight-color: transparent;
+  font-family: "Grape Nuts", cursive;
+  background: rgb(174, 229, 238);
+  background: radial-gradient(circle, rgb(174, 229, 238) 0%, rgb(37, 103, 223) 100%);
+}
+
+a, button:hover {
+  background: rgb(189, 174, 238);
+  background: radial-gradient(circle, rgb(189, 174, 238) 0%, rgb(148, 187, 233) 100%);
 }
 
 .main {
@@ -35,7 +48,7 @@ a, button {
   align-items: center;
   flex-direction: column;
   color: #FFFFFF;
-  width: 70vw;
+  width: 100%;
   padding: 5px;
 }
 
@@ -94,6 +107,7 @@ a, button {
 }
 
 .card-name {
+  font-family: "Grape Nuts", cursive;
   font-size: 1.8rem;
   color: rgb(5, 75, 215);
 }
@@ -130,6 +144,15 @@ a, button {
   border: 1px solid #fff;
   background-color: rgb(5, 75, 215);
   color: #fff;
+}
+
+.londonMap, .berlinMap, .sydneyMap, .tokyoMap {
+  height: 100px;
+  width: 150px;
+}
+
+div {
+  font-family: "Quicksand", sans-serif;
 }
 
 .form {
