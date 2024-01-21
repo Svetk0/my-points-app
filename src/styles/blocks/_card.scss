@@ -28,7 +28,7 @@
     @include spaceBetween;
     flex-direction: column;
     align-items: flex-start;
-    font-size: clamp(14px, 0.1rem + 2vw, 18px);
+    font-size: clamp(14px, 0.1rem + 2vw, 16px);
     margin-bottom: 20px;
 }
 .card-description {
@@ -49,7 +49,7 @@
     border-radius: 5px;
     padding: 1%;
     //width: 100%;
-    flex: 45%;
+    flex: 200px;
     background-color: $color-white;
     margin: 1vw;
     height: 400px;
