@@ -39,9 +39,9 @@ function printCurrency(currency) {
 function printCountryName(countryNameOf) {
     countryName.textContent = 'Country: ' + countryNameOf;
 }
-function printCityName(city) {
-    cityName.textContent = city;
-}
+// function printCityName(city) {
+//     cityName.textContent = city;
+// }
 function printLocation(location) {
     mapLocation.href = location;
     console.log('location: ' + location);
