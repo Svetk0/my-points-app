@@ -3,9 +3,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px;
+    //gap: 10px;
     margin: 2rem 0;
     padding: 0 7vw;
+    align-items: center;
+    justify-content: center;
    
     
 }
@@ -18,6 +20,7 @@
     padding-left: 10px;
     color: $input-color;
     font-weight: 600;
+    margin: 1vw;
    
    
 
@@ -25,11 +28,12 @@
 .button {
     width: 100px;
     height: 2rem;
-    
+    margin: 10px 1vw;
     border-radius: 5px;
     border: 1px solid #fff;
     background-color: $button-background-color;
     color: #fff;
+    
    
 
 }
