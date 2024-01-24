@@ -9,6 +9,8 @@ export default async function checkWeather (city) {
         const response = await fetch(apiUrlWeather + city + `&appid=${apiKeyWeather}`);
         const data = await response.json();
         console.log(data);
+        const currentTimestamp = data.dt;
+        console.log('data.dt:  '+data.dt);
 
         document.querySelector(".temperature").innerHTML = 'Temperature: ' +Math.round(data.main.temp) + "&#8451";
         document.querySelector(".temperature-feels_like").innerHTML = 'Feels like: ' + Math.round(data.main.feels_like) + "&#8451";

@@ -5,7 +5,7 @@
 //  import "./src/scripts/cityApi/region.js";
 
 import * as constants from './src/scripts/cityApi/constants.js';
-import { fetchData } from './src/scripts/cityApi/apiUtils.js';
+import * as api from  './src/scripts/cityApi/apiUtils.js';
 
 //constants.searchInput.value = 'de';
 
@@ -14,10 +14,16 @@ function updateSubmit() {
     return constants.searchInput.value = document.querySelector('#input').value;
 }
 
-constants.submitBtn.addEventListener('click', function () {
+constants.submitBtn.addEventListener('click', async function () {
      {
-        updateSubmit();
-        console.log('search: '+constants.searchInput.value);
-        fetchData(constants.apiUrlCountry);
+       
+        // let dataCountry = await api.fetchCountry();
+        // console.log('dataCountry: ' + dataCountry);
+        // console.log(dataCountry);
+        
+        let dataWeather = await api.fetchWeather();
+        console.log('dataWeather: ' + dataWeather);
+        console.log(dataWeather);
+
     }
 });
