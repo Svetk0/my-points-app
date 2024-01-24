@@ -4,14 +4,13 @@
 
 
 
-const submitBtn = document.querySelector('.submitBtn');
+//const submitBtn = document.querySelector('.submitBtn');
 const cityName = document.querySelector('.card-name');
 const cityCurrency = document.querySelector('.card-currency');
 const countryName = document.querySelector('.card-country');
 const mapLocation = document.querySelector('.card-timezone-link');
 const containerErrors = document.querySelector('.card-main-error');
-// const formContainer = document.querySelector('.form_container');
-// const countryInfoContainer = document.querySelector('.countryInfoContainer');
+
 containerErrors.style.display = 'none';
 //submitBtn.addEventListener('click', getCountryInfo);
 
@@ -27,8 +26,7 @@ export  function getCountryInfo(country) {
     countryName.textContent = '';
     mapLocation.href = '';
     cityName.textContent = '';
-    //printCityName(autoCompleteInput.value);
-    ////document.querySelector('#input').value = '';
+ 
 }
 
 
@@ -39,9 +37,8 @@ function printCurrency(currency) {
 function printCountryName(countryNameOf) {
     countryName.textContent = 'Country: ' + countryNameOf;
 }
-// function printCityName(city) {
-//     cityName.textContent = city;
-// }
+
+
 function printLocation(location) {
     mapLocation.href = location;
     console.log('location: ' + location);
@@ -71,4 +68,3 @@ async function getCountryInfoNew(countryName) {
     }
 }
 
-//getCountryInfo('ru');
