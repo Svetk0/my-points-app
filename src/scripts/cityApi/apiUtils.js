@@ -1,6 +1,6 @@
 // apiUtils.js
 import * as constants from './constants.js';
-
+const cityInfo = constants.cityInfo;
 //const fetchWeather = constants.apiUrlWeather + searchInput + `&appid=${constants.apiKeyWeather}`;
 
 
@@ -12,7 +12,7 @@ export async function fetchCountry(searchInput) {
         const fetchUrl = constants.apiUrlCountry + searchInput;
       const response = await fetch(fetchUrl);
         const data = await response.json();
-        console.log('search input:  '+searchInput);
+        console.log('search input Code Country:  '+searchInput);
         console.log(data);
       return data;
     } catch (error) {
@@ -27,11 +27,39 @@ export async function fetchWeather() {
         const fetchUrl = constants.apiUrlWeather + searchInput + `&appid=${constants.apiKeyWeather}`;
       const response = await fetch(fetchUrl);
         const data = await response.json();
-        console.log('search input weather:  '+searchInput);
+        console.log('search input Weather:  '+searchInput);
         console.log(data);
       return data;
     } catch (error) {
       console.error('Ошибка запроса in fetchWeather:', error);
+      throw error;
+    }
+}
+
+export async function fetchInfo() {
+    try {
+        const searchInput = document.querySelector('#input').value;
+        //const fetchUrl = constants.apiUrlWeather + searchInput + `&appid=${constants.apiKeyWeather}`;
+      //const response = await  apiGet("geoname", `name=${searchInput}`);
+        const data = await apiGet("geoname", `name=${searchInput}`);
+        console.log('search input Info:  '+searchInput);
+        console.log(data);
+
+        // get attraction info
+        const lon = data.lon;
+        const lat = data.lat;
+        const attractionsData = await apiGet("radius", `radius=1000&lon=${lon}&lat=${lat}&format=json&limit=5`);
+        console.log('Достопримечательности:', attractionsData);
+  
+        if (Array.isArray(attractionsData) && attractionsData.length > 0) {
+          const attractions = attractionsData.map(attraction => attraction.name).join(', ');
+          cityInfo.textContent = `Attractions: ${attractions}`;
+        } else {
+          cityInfo.textContent = 'Данные о достопримечательностях отсутствуют в ответе API';
+        }
+      return data;
+    } catch (error) {
+      console.error('Ошибка запроса in fetchInfo:', error);
       throw error;
     }
 }
@@ -59,7 +87,7 @@ export async function fetchWeather() {
     });
 }
   
-export async function fetchInfo () {
+export async function fetchInfo_old () {
     const searchInput = document.querySelector('#input').value;
     const cityInfo = constants.cityInfo;
   

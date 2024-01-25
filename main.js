@@ -15,17 +15,19 @@ function updateSubmit() {
 }
 
 constants.submitBtn.addEventListener('click', async function () {
-     {
-       
-        // let dataCountry = await api.fetchCountry();
-        // console.log('dataCountry: ' + dataCountry);
-        // console.log(dataCountry);
+    {
+        //get info about country code, attractions, and city name
+        let dataCountryInfo = await api.fetchInfo();
+        
+        //get info about country currency, country name, country location
+        let dataCountry = await api.fetchCountry(dataCountryInfo.country);
+        
         
         // let dataWeather = await api.fetchWeather();
         // console.log('dataWeather: ' + dataWeather);
         // console.log(dataWeather);
         //let cityName = 'paris';
-        let dataCountryInfo = await api.fetchInfo();
-        console.log(dataCountryInfo);
+      
+
     }
 });
