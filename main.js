@@ -21,9 +21,11 @@ constants.submitBtn.addEventListener('click', async function () {
         // console.log('dataCountry: ' + dataCountry);
         // console.log(dataCountry);
         
-        let dataWeather = await api.fetchWeather();
-        console.log('dataWeather: ' + dataWeather);
-        console.log(dataWeather);
-
+        // let dataWeather = await api.fetchWeather();
+        // console.log('dataWeather: ' + dataWeather);
+        // console.log(dataWeather);
+        //let cityName = 'paris';
+        let dataCountryInfo = await api.fetchInfo();
+        console.log(dataCountryInfo);
     }
 });
