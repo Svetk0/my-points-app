@@ -18,15 +18,15 @@ constants.submitBtn.addEventListener('click', async function () {
     {
         //get info about country code, attractions, and city name
         let dataCountryInfo = await api.fetchInfo();
-        
+
         //get info about country currency, country name, country location
         let dataCountry = await api.fetchCountry(dataCountryInfo.country);
         
         
-        // let dataWeather = await api.fetchWeather();
+        let dataWeather = await api.fetchWeather();
         // console.log('dataWeather: ' + dataWeather);
         // console.log(dataWeather);
-        //let cityName = 'paris';
+        
       
 
     }
