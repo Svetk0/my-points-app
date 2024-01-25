@@ -18,8 +18,9 @@ function updateSubmit() {
 constants.submitBtn.addEventListener('click', async function () {
     {
         //enable main card
-        document.querySelector('.card_main').style.display = 'flex';
+        //document.querySelector('.card_main').style.display = 'flex';
         print.clearCardInfo();
+        
         //get info about country code, attractions, and city name
         let dataCityInfo = await api.fetchInfo();
         print.printCityInfo(dataCityInfo);
@@ -27,11 +28,11 @@ constants.submitBtn.addEventListener('click', async function () {
         //get info about country currency, country name, country location
         let dataCountry = await api.fetchCountry(dataCityInfo.country);
         print.printCountryInfo(dataCountry);
+        
         //get info about weather
         let dataWeather = await api.fetchWeather();
         print.printWeatherInfo(dataWeather);
-        // console.log('dataWeather: ' + dataWeather);
-        // console.log(dataWeather);
+        
         
       
 
