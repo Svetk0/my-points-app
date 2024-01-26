@@ -1,4 +1,4 @@
- document.querySelector('.card_main').style.display = 'flex';
+ document.querySelector('.card_main').style.display = 'none';
 
 //  import "./src/scripts/cityApi/apiWeather.js";
 //  import "./src/scripts/cityApi/usefulInfo.js";
