@@ -1,12 +1,11 @@
 import * as constants from './constants.js';
 
-export function currentMyTime() {
-    let Data = new Date();
-    let year = Data.getFullYear();
-    let month = Data.getMonth();
-    let day = Data.getDate();
-    let hours = zero_first_format(Data.getHours());
-    let minutes = zero_first_format(Data.getMinutes());
+function getUserTime(t) {
+    let Y = t.getFullYear();
+    let M = numToMonth(t.getMonth());
+    let D = t.getDate();
+    let h = zero_first_format(t.getHours());
+    let min = zero_first_format(t.getMinutes());
 
     function zero_first_format(value) {
         if (value < 10) {
@@ -14,6 +13,7 @@ export function currentMyTime() {
         }
         return value;
     }
+    function numToMonth(month) { 
 
     switch (month) {
         case 0: month = "Jan."; break;
@@ -29,6 +29,18 @@ export function currentMyTime() {
         case 10: month = "Nov."; break;
         case 11: month = "Dec."; break;
     }
+        return month;
+    }
+    return `${D} ${M} ${Y} ${h}:${min}`
+}
+ 
+export function currentMyTime() {
+    let Data = new Date();
+    constants.currentDate.innerHTML = "Today is " +getUserTime(Data);
+}
 
-    constants.currentDate.innerHTML = "Today is " + day + " " + month + " " + year + "   " + hours + ':' + minutes;
+export function localTimeMainCard(apiDataWeather) { 
+    console.log('====  localTimeMainCard ===');
+    console.log(apiDataWeather.timezone, ' ',apiDataWeather.dt);
+
 }

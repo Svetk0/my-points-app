@@ -7,13 +7,13 @@
 import * as constants from './src/scripts/cityApi/constants.js';
 import * as api from './src/scripts/cityApi/apiUtils.js';
 import * as print from './src/scripts/cityApi/printDom.js';
-import * as timestamp from './src/scripts/cityApi/getTime.js';
-timestamp.currentMyTime();
-
+import * as time from './src/scripts/cityApi/getTime.js';
+time.currentMyTime();
+let m = console.log('M: '+time.currentMyTime());
 
 constants.submitBtn.addEventListener('click', async function () {
     {
-        timestamp.currentMyTime(); //upd client local time
+        time.currentMyTime(); //upd client local time
         print.clearCardInfo(); //enable main card
         
         //get info about country code, attractions, and city name
@@ -27,7 +27,7 @@ constants.submitBtn.addEventListener('click', async function () {
         //get info about weather
         let dataWeather = await api.fetchWeather();
         print.printWeatherInfo(dataWeather);
-        
+        time.localTimeMainCard(dataWeather);
         
         document.querySelector('#input').value = '';
 
