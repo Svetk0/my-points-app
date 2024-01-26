@@ -8,12 +8,7 @@ import * as constants from './src/scripts/cityApi/constants.js';
 import * as api from './src/scripts/cityApi/apiUtils.js';
 import * as print from './src/scripts/cityApi/printDom.js';
 
-//constants.searchInput.value = 'de';
 
-//fetchData(constants.apiUrlCountry);
-function updateSubmit() { 
-    return constants.searchInput.value = document.querySelector('#input').value;
-}
 
 constants.submitBtn.addEventListener('click', async function () {
     {
@@ -34,7 +29,7 @@ constants.submitBtn.addEventListener('click', async function () {
         print.printWeatherInfo(dataWeather);
         
         
-      
+        document.querySelector('#input').value = '';
 
     }
 });
