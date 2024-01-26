@@ -13,6 +13,7 @@ export const apiUrlCountry = 'https://restcountries.com/v3.1/alpha/';
 // export const fetchWeather = apiUrlWeather + searchInput.value + `&appid=${apiKeyWeather}`;
 // export const fetchCountry = apiUrlCountry + searchInput.value;
 //====    main card DOM  =====
+export const currentDate = document.querySelector('.currentDate');
 //main card description
 export const cityName = document.querySelector('.card-name');
 export const countryCurrency = document.querySelector('.card-currency');

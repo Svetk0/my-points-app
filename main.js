@@ -7,14 +7,14 @@
 import * as constants from './src/scripts/cityApi/constants.js';
 import * as api from './src/scripts/cityApi/apiUtils.js';
 import * as print from './src/scripts/cityApi/printDom.js';
-
+import * as timestamp from './src/scripts/cityApi/getTime.js';
+timestamp.currentMyTime();
 
 
 constants.submitBtn.addEventListener('click', async function () {
     {
-        //enable main card
-        //document.querySelector('.card_main').style.display = 'flex';
-        print.clearCardInfo();
+        timestamp.currentMyTime(); //upd client local time
+        print.clearCardInfo(); //enable main card
         
         //get info about country code, attractions, and city name
         let dataCityInfo = await api.fetchInfo();
