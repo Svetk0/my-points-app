@@ -8,7 +8,7 @@ import * as constants from './src/scripts/cityApi/constants.js';
 import * as api from './src/scripts/cityApi/apiUtils.js';
 import * as print from './src/scripts/cityApi/printDom.js';
 import * as time from './src/scripts/cityApi/getTime.js';
-//time.currentMyTime();
+time.currentMyTime();
 //let m = console.log('M: '+time.currentMyTime());
 
 constants.submitBtn.addEventListener('click', async function () {

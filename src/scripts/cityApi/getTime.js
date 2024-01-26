@@ -6,8 +6,8 @@ function getUserTime(t) {
     let D = t.getDate();
     let h = zero_first_format(t.getHours());
     let min = zero_first_format(t.getMinutes());
-    console.log('getTimezoneOffset(): ' + t.getTimezoneOffset());
-    console.log('utc time(): '+t.getTime());
+    //console.log('getTimezoneOffset(): ' + t.getTimezoneOffset());
+    //console.log('utc time(): '+t.getTime());
 
     function zero_first_format(value) {
         if (value < 10) {
