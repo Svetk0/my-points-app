@@ -41,6 +41,10 @@ export function currentMyTime() {
 
 export function localTimeMainCard(apiDataWeather) { 
     console.log('====  localTimeMainCard ===');
-    console.log(apiDataWeather.timezone, ' ',apiDataWeather.dt);
+    console.log(apiDataWeather.timezone, ' ', apiDataWeather.dt);
+
+
+
+    constants.cityTimezone.textContent =  'Local Time: '+ getUserTime(new Date (1706291561000));
 
 }

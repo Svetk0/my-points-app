@@ -1,4 +1,4 @@
- document.querySelector('.card_main').style.display = 'none';
+ document.querySelector('.card_main').style.display = 'flex';
 
 //  import "./src/scripts/cityApi/apiWeather.js";
 //  import "./src/scripts/cityApi/usefulInfo.js";
@@ -8,8 +8,8 @@ import * as constants from './src/scripts/cityApi/constants.js';
 import * as api from './src/scripts/cityApi/apiUtils.js';
 import * as print from './src/scripts/cityApi/printDom.js';
 import * as time from './src/scripts/cityApi/getTime.js';
-time.currentMyTime();
-let m = console.log('M: '+time.currentMyTime());
+//time.currentMyTime();
+//let m = console.log('M: '+time.currentMyTime());
 
 constants.submitBtn.addEventListener('click', async function () {
     {
