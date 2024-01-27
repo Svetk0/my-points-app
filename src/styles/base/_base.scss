@@ -14,12 +14,12 @@ html {
     //background: rgb(12,38,121);
 background: linear-gradient(180deg, rgba(12,38,121,0.9641981792717087) 17%, rgba(29,145,193,1) 48%, rgba(130,202,255,1) 100%);
     //height: 100vh;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif; 
     @include center;
     
 }
 h1{
-    font-family: 'Moirai One', system-ui;
+    //font-family: 'Moirai One', system-ui;
     margin: 3rem 0;
     font-size: 3rem;
     text-align: center;
@@ -29,7 +29,7 @@ h1{
  }
 button {
     -webkit-tap-highlight-color: transparent;
-    font-family: 'Grape Nuts', cursive;
+   // font-family: 'Grape Nuts', cursive;
     background: rgb(174,229,238);
 background: radial-gradient(circle, rgba(174,229,238,1) 0%, rgba(37,103,223,1) 100%);
 }
