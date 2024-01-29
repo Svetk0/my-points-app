@@ -35,5 +35,7 @@ constants.submitBtn.addEventListener('click', async function () {
         // Обработка ошибок
     } finally {
         loadingSpinner.style.display = 'none';
+        document.querySelector('#input').value = '';
     }
+
 });
