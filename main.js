@@ -3,6 +3,7 @@ import * as constants from './src/scripts/cityApi/constants.js';
 import * as api from './src/scripts/cityApi/apiUtils.js';
 import * as print from './src/scripts/cityApi/printDom.js';
 import * as localtime from './src/scripts/cityApi/getLocalsTime.js';
+import * as err from './src/scripts/cityApi/catchErrors.js';
 
 localtime.currentMyTime();
 
@@ -33,6 +34,8 @@ constants.submitBtn.addEventListener('click', async function () {
     } catch (error) {
         console.error('Error:', error);
         // Обработка ошибок
+        err.checkAll(error);
+
     } finally {
         loadingSpinner.style.display = 'none';
         document.querySelector('#input').value = '';
