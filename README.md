@@ -8,7 +8,7 @@
 https://svetk0.github.io/my-points-app/
 <br>
 <br>
-<img src="./src/images/readme-title.png" width="100%" > <br>
+<div align="center"><img src="./src/images/readme-title.png" width="70%"> </div> <br>
 После введения названия города, Вам будет доступна карточка, которая содержит:
 
 - Местное время
