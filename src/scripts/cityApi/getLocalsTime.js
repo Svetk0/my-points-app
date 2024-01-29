@@ -1,5 +1,30 @@
 import * as constants from './constants.js';
+function numToMonth(month) { 
 
+    switch (month) {
+        case 0: month = "Jan."; break;
+        case 1: month = "Feb."; break;
+        case 2: month = "Mar."; break;
+        case 3: month = "Apr."; break;
+        case 4: month = "May"; break;
+        case 5: month = "June"; break;
+        case 6: month = "July"; break;
+        case 7: month = "Aug."; break;
+        case 8: month = "Sept."; break;
+        case 9: month = "Oct."; break;
+        case 10: month = "Nov."; break;
+        case 11: month = "Dec."; break;
+    }
+        return month;
+}
+function zero_first_format(value) {
+    if (value < 10) {
+        value = '0' + value;
+    }
+    return value;
+}
+
+// get local time
 function getUserTime(t) {
     let Y = t.getFullYear();
     let M = numToMonth(t.getMonth());
@@ -8,34 +33,10 @@ function getUserTime(t) {
     let min = zero_first_format(t.getMinutes());
     //console.log('getTimezoneOffset(): ' + t.getTimezoneOffset());
     //console.log('utc time(): '+t.getTime());
-
-    function zero_first_format(value) {
-        if (value < 10) {
-            value = '0' + value;
-        }
-        return value;
-    }
-    function numToMonth(month) { 
-
-    switch (month) {
-        case 0: month = "Jan."; break;
-        case 1: month = "Feb."; break;
-        case 2: month = "Mar."; break;
-        case 3: month = "Apr."; break;
-        case 4: month = "May"; break;
-        case 5: month = "June"; break;
-        case 6: month = "July"; break;
-        case 7: month = "Aug."; break;
-        case 8: month = "Sept."; break;
-        case 9: month = "Oct."; break;
-        case 10: month = "Nov."; break;
-        case 11: month = "Dec."; break;
-    }
-        return month;
-    }
     return `${D} ${M} ${Y} ${h}:${min}`
 }
  
+//get UTC time
 function getUserUTCTime(t) {
     let Y = t.getUTCFullYear();
     let M = numToMonth(t.getUTCMonth());
@@ -44,37 +45,16 @@ function getUserUTCTime(t) {
     let min = zero_first_format(t.getUTCMinutes());
    // console.log('utc = getTimezoneOffset(): ' + t.getTimezoneOffset());
    // console.log('utc time(): '+t.getTime());
-
-    function zero_first_format(value) {
-        if (value < 10) {
-            value = '0' + value;
-        }
-        return value;
-    }
-    function numToMonth(month) { 
-
-    switch (month) {
-        case 0: month = "Jan."; break;
-        case 1: month = "Feb."; break;
-        case 2: month = "Mar."; break;
-        case 3: month = "Apr."; break;
-        case 4: month = "May"; break;
-        case 5: month = "June"; break;
-        case 6: month = "July"; break;
-        case 7: month = "Aug."; break;
-        case 8: month = "Sept."; break;
-        case 9: month = "Oct."; break;
-        case 10: month = "Nov."; break;
-        case 11: month = "Dec."; break;
-    }
-        return month;
-    }
     return `${D} ${M} ${Y} ${h}:${min}`
 }
+
 export function currentMyTime() {
     let Data = new Date();
-    constants.currentDate.innerHTML = "Today is " +getUserTime(Data);
-}
+    constants.currentDate.innerHTML = "Today is " + getUserTime(Data);
+    setInterval(console.log('inc 1 sec'), 1000);
+};
+
+//setInterval(currentMyTime, 60000); // Обновление каждую минуту
 
 export function localTimeMainCard(apiDataWeather) { 
     console.log('====  localTimeMainCard ===');

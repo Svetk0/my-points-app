@@ -41,7 +41,10 @@ export function printWeatherInfo(data) {
 }
 
 export function printCityInfo(data) { 
-    constants.cityName.textContent = data.name;
+    let nameCity = data.name;
+    nameCity = nameCity[0].toUpperCase() + nameCity.substring(1);
+    constants.cityName.textContent = nameCity;
+    //console.log('city name: '+data.name,nameCity);
 }
 
 
