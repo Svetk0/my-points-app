@@ -10,7 +10,7 @@ export async function fetchCountry(searchInput) {
       const response = await fetch(fetchUrl);
         const data = await response.json();
         console.log('search input Code Country:  '+searchInput);
-        console.log(data);
+        //console.log(data);
       return data;
     } catch (error) {
       console.error('Ошибка запроса in fetchCountry:', error);
@@ -25,7 +25,7 @@ export async function fetchWeather() {
       const response = await fetch(fetchUrl);
         const data = await response.json();
         console.log('search input Weather:  '+searchInput);
-        console.log(data);
+        //console.log(data);
       return data;
     } catch (error) {
       console.error('Ошибка запроса in fetchWeather:', error);
@@ -38,7 +38,7 @@ export async function fetchInfo() {
         const searchInput = document.querySelector('#input').value;
         const data = await apiGet("geoname", `name=${searchInput}`);
         console.log('search input Info:  '+searchInput);
-        console.log(data);
+        //console.log(data);
 
         // get attraction info
         const lon = data.lon;

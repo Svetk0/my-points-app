@@ -6,6 +6,7 @@ import * as localtime from './src/scripts/cityApi/getLocalsTime.js';
 import * as err from './src/scripts/cityApi/catchErrors.js';
 
 localtime.currentMyTime();
+constants.containerErrors.style.display = 'none';
 
 constants.submitBtn.addEventListener('click', async function () {
     event.preventDefault();
@@ -32,11 +33,13 @@ constants.submitBtn.addEventListener('click', async function () {
 
         document.querySelector('#input').value = '';
     } catch (error) {
+        constants.containerErrors.style.display = 'flex';
         console.error('Error:', error);
         // Обработка ошибок
         err.checkAll(error);
 
     } finally {
+
         loadingSpinner.style.display = 'none';
         document.querySelector('#input').value = '';
     }
