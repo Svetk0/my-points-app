@@ -20,12 +20,16 @@ background: linear-gradient(180deg, rgba(12,38,121,0.9641981792717087) 17%, rgba
 }
 h1{
     //font-family: 'Moirai One', system-ui;
-    margin: 3rem 0;
+    margin: 0 0 3rem 0;
     font-size: 3rem;
     text-align: center;
 }
 .fa-solid{
     font-size: 45pt;
+ }
+ .logoIcon {
+    width: 100px;
+    margin: 0 0 3rem 0;
  }
 button {
     -webkit-tap-highlight-color: transparent;

@@ -23,13 +23,18 @@ html {
 }
 
 h1 {
-  margin: 3rem 0;
+  margin: 0 0 3rem 0;
   font-size: 3rem;
   text-align: center;
 }
 
 .fa-solid {
   font-size: 45pt;
+}
+
+.logoIcon {
+  width: 100px;
+  margin: 0 0 3rem 0;
 }
 
 button {
