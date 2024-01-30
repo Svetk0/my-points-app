@@ -12,8 +12,9 @@ html {
     @include typo-body;
     // background-color: $html-background-color;
     //background: rgb(12,38,121);
-background: linear-gradient(180deg, rgba(12,38,121,0.9641981792717087) 17%, rgba(29,145,193,1) 48%, rgba(130,202,255,1) 100%);
-    height: 100vh;
+background: linear-gradient(180deg, rgba(12,38,121,0.9641981792717087) 15%, rgb(10, 120, 167) 40%, rgb(100, 186, 247) 100%);
+    //height: 100vh;
+   
     font-family: Helvetica, Arial, sans-serif; 
     @include center;
     
@@ -47,8 +48,10 @@ background: radial-gradient(circle, rgba(189,174,238,1) 0%, rgba(148,187,233,1) 
     flex-direction: column;
     color: $color-white;
     //max-width: 95vw;
-    padding: 2vw;
-    
+   padding: 2vw;
+    //height: 100vh;
+    background-color: transparent;
+    //margin: 0 0 50px 0;
   
 }
 .title {
