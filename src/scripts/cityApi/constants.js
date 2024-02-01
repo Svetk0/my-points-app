@@ -22,7 +22,9 @@ export const mapLocationLink = document.querySelector('.card-location-link');
 export const mapLocation = document.querySelector('.card-location');
 export const containerErrors = document.querySelector('.card-main-error');
 export const cityTimezone = document.querySelector('.card-timezone');
+export const cityLocalTime = document.querySelector('.card-localtime');
 export const cityInfo= document.querySelector('.card-info');
+
 //main card weather
 export const cityTemperature = document.querySelector(".temperature");
 export const cityTempFeelsLike = document.querySelector(".temperature-feels_like");

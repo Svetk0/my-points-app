@@ -67,6 +67,6 @@ export function localTimeMainCard(apiDataWeather) {
 
 
 
-    constants.cityTimezone.textContent =  'Local Time: '+ getUserUTCTime(new Date (localTimeCity*1000));
+    constants.cityLocalTime.textContent =  'Local Time: '+ getUserUTCTime(new Date (localTimeCity*1000));
 
 }
