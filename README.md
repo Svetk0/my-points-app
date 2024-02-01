@@ -1,7 +1,7 @@
 # My points App
 ### <b> Приложение для путешествий </b>
 
- 🔗  https://svetk0.github.io/my-points-app/
+👀 ->   https://svetk0.github.io/my-points-app/
 
  ---
 
