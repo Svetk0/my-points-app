@@ -44,7 +44,7 @@ export function printCityInfo(data) {
     let nameCity = data.name;
     nameCity = nameCity[0].toUpperCase() + nameCity.substring(1);
     constants.cityName.textContent = nameCity;
-    //constants.cityTimezone.textContent
+    constants.cityTimezone.textContent = 'Timezone: ' + data.timezone;
     //console.log('city name: '+data.name,nameCity);
 }
 
