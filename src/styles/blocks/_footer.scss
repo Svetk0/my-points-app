@@ -1,4 +1,4 @@
-.footer{
+.footer {
     margin-top: 10vw;
     display: flex;
     flex-direction: row;
@@ -6,7 +6,13 @@
     justify-content: center;
     align-items: center;
 }
-.poweredby {
-    font-size: 0.8rem;
 
+.poweredby {
+    font-size: 0.7rem;
+
+}
+
+.footer_logo {
+    width: 25px;
+    height: 25px;
 }
