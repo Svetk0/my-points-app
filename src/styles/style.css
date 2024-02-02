@@ -15,7 +15,7 @@ html {
   margin: 0;
   color: black;
   background-color: rgb(0, 0, 0);
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,6 +28,7 @@ body {
 }
 
 h1 {
+  font-family: "Greycliff", sans-serif;
   margin: 0 0 3rem 0;
   font-size: 2.5rem;
   text-align: center;
@@ -44,13 +45,6 @@ h1 {
 
 button {
   -webkit-tap-highlight-color: transparent;
-  background: rgb(174, 229, 238);
-  background: radial-gradient(circle, rgb(174, 229, 238) 0%, rgb(37, 103, 223) 100%);
-}
-
-button:hover {
-  background: rgb(189, 174, 238);
-  background: radial-gradient(circle, rgb(189, 174, 238) 0%, rgb(148, 187, 233) 100%);
 }
 
 .main {
@@ -125,8 +119,14 @@ button:hover {
 }
 
 .card-name {
-  font-size: 2.2rem;
-  color: rgb(5, 75, 215);
+  font-family: "Greycliff", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  color: rgb(63, 251, 178);
+  background: linear-gradient(120deg, rgb(71, 234, 172) 9%, rgb(0, 41, 255) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .card-description, .card-weather, .card-description-main {
@@ -210,6 +210,13 @@ button:hover {
   border: 1px solid #fff;
   background-color: rgb(5, 75, 215);
   color: #fff;
+  background: rgb(63, 251, 178);
+  background: linear-gradient(300deg, rgb(63, 251, 178) 9%, rgb(0, 41, 255) 100%);
+}
+
+button:hover {
+  background: rgb(252, 70, 107);
+  background: linear-gradient(300deg, rgb(252, 70, 107) 9%, rgb(0, 41, 255) 100%);
 }
 
 .b-test {

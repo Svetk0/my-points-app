@@ -8,11 +8,12 @@
     padding: 0 7vw;
     align-items: center;
     justify-content: center;
-   
-    
+
+
 }
+
 .autocompleteInput {
-    flex:60%;
+    flex: 60%;
     height: 2rem;
     min-width: 100px;
     border-radius: 5px;
@@ -21,10 +22,11 @@
     color: $input-color;
     font-weight: 600;
     margin: 1vw;
-   
-   
+
+
 
 }
+
 .button {
     width: 100px;
     height: 2rem;
@@ -33,11 +35,17 @@
     border: 1px solid #fff;
     background-color: $button-background-color;
     color: #fff;
-    
-   
 
+    background: rgb(63,251,178);
+    background: linear-gradient(300deg, rgba(63,251,178,1) 9%, rgba(0,41,255,1) 100%);
 }
 
+button:hover {
+    background: rgba(252, 70, 107, 1);
+    background: linear-gradient(300deg, rgba(252, 70, 107, 1)9%, rgba(0,41,255,1) 100%);
+    // background: rgb(63, 94, 251);
+    // background: linear-gradient(300deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 81%);
+}
 
 .b-test {
     display: block;
@@ -45,6 +53,7 @@
     justify-self: center;
 
 }
+
 .b-1 {
-    background-color:rgba(235, 243, 80, 0.4);
+    background-color: rgba(235, 243, 80, 0.4);
 }

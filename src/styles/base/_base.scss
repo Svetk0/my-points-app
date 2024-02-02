@@ -14,7 +14,7 @@ html {
     background-color: rgb(0, 0, 0);
 
    
-    font-family: Helvetica, Arial, sans-serif; 
+    font-family: 'Roboto', sans-serif; 
     @include center;
     
 }
@@ -24,7 +24,7 @@ body {
     width: 100%;
 }
 h1{
-    //font-family: 'Moirai One', system-ui;
+    font-family: 'Greycliff', sans-serif;
     margin: 0 0 3rem 0;
     font-size: 2.5rem;
     text-align: center;
@@ -38,14 +38,9 @@ h1{
  }
 button {
     -webkit-tap-highlight-color: transparent;
-   // font-family: 'Grape Nuts', cursive;
-    background: rgb(174,229,238);
-background: radial-gradient(circle, rgba(174,229,238,1) 0%, rgba(37,103,223,1) 100%);
+  
 }
-button:hover {
-    background: rgb(189,174,238);
-background: radial-gradient(circle, rgba(189,174,238,1) 0%, rgba(148,187,233,1) 100%);
-}
+
 
 .main {
     @include center;

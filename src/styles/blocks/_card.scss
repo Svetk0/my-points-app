@@ -20,8 +20,15 @@
 }
 .card-name {
     //font-family: 'Grape Nuts', cursive;
-    font-size: 2.2rem;
-    color:$name-color;
+    font-family: 'Greycliff', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    //color:$name-color;
+    color: rgb(63,251,178);
+    background: linear-gradient(120deg, rgb(71, 234, 172) 9%, rgba(0,41,255,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 }
 .card-description, .card-weather, .card-description-main  {
