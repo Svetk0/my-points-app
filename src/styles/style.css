@@ -323,5 +323,18 @@ button:hover {
     transform: rotate(360deg);
   }
 }
+.footer {
+  margin-top: 10vw;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.poweredby {
+  font-size: 0.8rem;
+}
+
 /*                                     */
 /* ------- THE TEST ZONE ---- *//*# sourceMappingURL=style.css.map */
