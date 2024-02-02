@@ -5,7 +5,6 @@ const cityInfo = constants.cityInfo;
         
 export async function fetchCountry(searchInput) {
     try {
-         //searchInput = document.querySelector('#input').value;
         const fetchUrl = constants.apiUrlCountry + searchInput;
       const response = await fetch(fetchUrl);
         const data = await response.json();
@@ -13,7 +12,7 @@ export async function fetchCountry(searchInput) {
         //console.log(data);
       return data;
     } catch (error) {
-      console.error('Ошибка запроса in fetchCountry:', error);
+      console.error('in fetch Country:', error.message);
       throw error;
     }
 }
@@ -28,7 +27,7 @@ export async function fetchWeather() {
         //console.log(data);
       return data;
     } catch (error) {
-      console.error('Ошибка запроса in fetchWeather:', error);
+      console.error('Ошибка запроса in fetch Weather:', error);
       throw error;
     }
 }
@@ -54,7 +53,7 @@ export async function fetchInfo() {
         }
       return data;
     } catch (error) {
-      console.error('Ошибка запроса in fetchInfo:', error);
+      console.error('Ошибка запроса in fetch Info:', error);
       throw error;
     }
 }

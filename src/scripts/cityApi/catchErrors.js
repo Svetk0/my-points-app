@@ -4,7 +4,8 @@ function checkValidity(input) {
     //let validity = input.validity;
     const errors = [];
     if (input) {
-        errors.push("Error in get request");
+        errors.push("Error in the getting request: not full data --> switch to wi-fi network");
+  
     }
     // if (validity.patternMismatch) {
     //     errors.push("Неверный формат заполнения");

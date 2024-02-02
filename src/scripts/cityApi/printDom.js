@@ -14,11 +14,13 @@ export  function clearCardInfo () {
     constants.cityName.textContent = '';
     constants.cityInfo.textContent = '';
     constants.cityTimezone.textContent = '';
+    constants.cityLocalTime.textContent = '';
 
     constants.cityTemperature.textContent = '';
     constants.cityTempFeelsLike.textContent = '';
     constants.cityHumidity.textContent = '';
     constants.cityWind.textContent = '';
+    document.querySelector('.card-location').style.display = 'none';
  
 }
 
@@ -29,6 +31,7 @@ export function printCountryInfo(data) {
     constants.countryCurrency.textContent = 'Currency: ' + currency;
     //constants.mapLocation.textContent = 'Location: ';
     //constants.mapLocationLink.style.display= 'block';
+    document.querySelector('.card-location').style.display = 'block';
     constants.mapLocationLink.href = data[0].maps.googleMaps;
     constants.countryName.textContent = 'Country: '+ data[0].name.common;
 }
