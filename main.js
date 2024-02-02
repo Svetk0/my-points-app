@@ -1,4 +1,5 @@
-// main.js
+
+//import './src/scripts/initApp/initSavedCards.js'; //saved cards template
 import * as constants from './src/scripts/cityApi/constants.js';
 import * as api from './src/scripts/cityApi/apiUtils.js';
 import * as print from './src/scripts/cityApi/printDom.js';
