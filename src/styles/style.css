@@ -53,7 +53,7 @@ button {
   align-items: center;
   flex-direction: column;
   color: #FFFFFF;
-  padding: 2vw;
+  padding: 7vw;
   background-color: transparent;
 }
 
@@ -185,7 +185,6 @@ button {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 2rem 0;
-  padding: 0 7vw;
   align-items: center;
   justify-content: center;
 }
