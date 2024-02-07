@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*------- colors  ------*/ /* ---- mixins -----*/ /*----- typo mixins -----*/ /*--------- base -------*/
 * {
   box-sizing: border-box;
@@ -13,17 +14,23 @@ html {
   line-height: normal;
   margin: 0;
   color: black;
-  background: linear-gradient(180deg, rgba(12, 38, 121, 0.9641981793) 17%, rgb(29, 145, 193) 48%, rgb(130, 202, 255) 100%);
-  font-family: Helvetica, Arial, sans-serif;
+  background-color: rgb(0, 0, 0);
+  font-family: "Roboto", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+body {
+  background: linear-gradient(180deg, rgba(12, 38, 121, 0.9641981793) 15%, rgb(10, 120, 167) 40%, rgb(100, 186, 247) 100%);
+  min-height: 100vh;
+  width: 100%;
+}
+
 h1 {
-  font-family: "Moirai One", system-ui;
-  margin: 3rem 0;
-  font-size: 3rem;
+  font-family: "Greycliff", sans-serif;
+  margin: 0 0 3rem 0;
+  font-size: 2.5rem;
   text-align: center;
 }
 
@@ -31,16 +38,13 @@ h1 {
   font-size: 45pt;
 }
 
-button {
-  -webkit-tap-highlight-color: transparent;
-  font-family: "Grape Nuts", cursive;
-  background: rgb(174, 229, 238);
-  background: radial-gradient(circle, rgb(174, 229, 238) 0%, rgb(37, 103, 223) 100%);
+.logoIcon {
+  width: 5.5rem;
+  margin: 0 0 3rem 0;
 }
 
-button:hover {
-  background: rgb(189, 174, 238);
-  background: radial-gradient(circle, rgb(189, 174, 238) 0%, rgb(148, 187, 233) 100%);
+button {
+  -webkit-tap-highlight-color: transparent;
 }
 
 .main {
@@ -49,7 +53,8 @@ button:hover {
   align-items: center;
   flex-direction: column;
   color: #FFFFFF;
-  padding: 2vw;
+  padding: 7vw;
+  background-color: transparent;
 }
 
 .title {
@@ -114,9 +119,14 @@ button:hover {
 }
 
 .card-name {
-  font-family: "Grape Nuts", cursive;
-  font-size: 2.2rem;
-  color: rgb(5, 75, 215);
+  font-family: "Greycliff", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  color: rgb(63, 251, 178);
+  background: linear-gradient(120deg, rgb(71, 234, 172) 9%, rgb(0, 41, 255) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .card-description, .card-weather, .card-description-main {
@@ -169,17 +179,12 @@ button:hover {
   width: 150px;
 }
 
-div {
-  font-family: "Quicksand", sans-serif;
-}
-
 .form {
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 2rem 0;
-  padding: 0 7vw;
   align-items: center;
   justify-content: center;
 }
@@ -204,6 +209,13 @@ div {
   border: 1px solid #fff;
   background-color: rgb(5, 75, 215);
   color: #fff;
+  background: rgb(63, 251, 178);
+  background: linear-gradient(300deg, rgb(63, 251, 178) 9%, rgb(0, 41, 255) 100%);
+}
+
+button:hover {
+  background: rgb(252, 70, 107);
+  background: linear-gradient(300deg, rgb(252, 70, 107) 9%, rgb(0, 41, 255) 100%);
 }
 
 .b-test {
@@ -273,15 +285,6 @@ div {
   border-radius: 5px;
 }
 
-.text_line {
-  display: flex;
-  color: #FFFFFF;
-  width: 70vw;
-  padding: 10px;
-  padding-bottom: 10px;
-  font-size: 1.3rem;
-}
-
 .currentDate {
   display: flex;
   justify-content: end;
@@ -290,9 +293,48 @@ div {
   padding: 10px;
   padding-bottom: 5px;
   padding-right: 0;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-align: center;
 }
 
-/*                                     */
+.loading-spinner {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px; /* половина высоты спиннера */
+  margin-left: -25px; /* половина ширины спиннера */
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.footer {
+  margin-top: 10vw;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.poweredby {
+  font-size: 0.7rem;
+}
+
+.footer_logo {
+  width: 25px;
+  height: 25px;
+} /*                                     */
 /* ------- THE TEST ZONE ---- *//*# sourceMappingURL=style.css.map */

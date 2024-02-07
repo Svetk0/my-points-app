@@ -5,7 +5,7 @@ const cityInfo = document.querySelector('.card-info');
 export default function apiGet(method, query) {
   console.log('query: ' + query);
 
-  return new Promise(function(resolve, reject) {
+  return new Promise(function (resolve, reject) {
     var otmAPI = "https://api.opentripmap.com/0.1/en/places/" + method + "?apikey=" + apiKey;
 
     if (query !== undefined) {
@@ -17,7 +17,7 @@ export default function apiGet(method, query) {
       .then(data => {
         resolve(data);
       })
-      .catch(function(error) {
+      .catch(function (error) {
         reject(error);
         console.error('Ошибка запроса:', error);
         cityInfo.textContent = 'Произошла ошибка при запросе к API';
@@ -25,7 +25,7 @@ export default function apiGet(method, query) {
   });
 }
 
-document.querySelector('.submitBtn').addEventListener('click', function() {
+document.querySelector('.submitBtn').addEventListener('click', function () {
   const cityName = document.getElementById('input').value;
 
   apiGet("geoname", `name=${cityName}`)

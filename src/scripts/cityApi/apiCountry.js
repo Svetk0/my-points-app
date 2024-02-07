@@ -11,7 +11,7 @@ const countryName = document.querySelector('.card-country');
 const mapLocation = document.querySelector('.card-timezone-link');
 const containerErrors = document.querySelector('.card-main-error');
 
-containerErrors.style.display = 'none';
+
 //submitBtn.addEventListener('click', getCountryInfo);
 
 
